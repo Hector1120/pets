@@ -39,15 +39,16 @@
         <img src="../../front/icons/Escudo.png" width="100"> <br>
         <center>
         <form name="editUserForm" action="http://127.0.0.1/pets/back/src/update_user.php" method="post">
+            <input type="hidden" name="UID" 
+                     value =' <?php echo $id; ?> ' readonly="yes"><br><br>
             <label>Firstname</label>&nbsp;&nbsp;<input type="text" name="f_name" 
                      value =' <?php echo $f_name; ?> ' required><br><br>
                 <label>Lastname</label>&nbsp;&nbsp;<input type="text" name="l_name" 
                      value =' <?php echo $l_name; ?> ' required><br><br>
                 <label>Ident.num</label>&nbsp;&nbsp;<input type="text" name="id_num" 
-                     value =' <?php echo $ident; ?> ' required
-                     disable="true"><br><br>
+                     value =' <?php echo $ident; ?> ' required><br><br>
                 <label>Address</label>&nbsp;&nbsp;<input type="text" name="Adress" 
-                     value =' <?php echo $Address; ?> 'required
+                     value =' <?php echo $Address; ?> ' required
                      ><br><br>
                 <label>Cellphone</label>&nbsp;&nbsp;<input type="text" name="cel_Phone" 
                      value =' <?php echo $mobile; ?> ' required
